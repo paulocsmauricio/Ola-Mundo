@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<!-- saved from url=(0147)https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/ -->
+<html lang="pt-BR" class="pp-off-canvas-menu-module pp-off-canvas-menu-left chrome chrome84"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+				<!-- Google Analytics user opt-out added via Site Kit by Google -->
+					<link rel="stylesheet" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cp-popup.min.css" media="all"><script type="text/javascript" id="www-widgetapi-script" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/www-widgetapi.js.transferir" async=""></script><script async="" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/mtc.js.transferir"></script><script type="text/javascript" async="" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/analytics.js.transferir"></script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+				<title>Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo</title>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Feed para Curso em Vídeo »" href="https://www.cursoemvideo.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Curso em Vídeo »" href="https://www.cursoemvideo.com/comments/feed/">
+<script>function cpLoadCSS(e,t,n){"use strict";var i=window.document.createElement("link"),o=t||window.document.getElementsByTagName("script")[0];return i.rel="stylesheet",i.href=e,i.media="only x",o.parentNode.insertBefore(i,o),setTimeout(function(){i.media=n||"all"}),i}</script><style>.cp-popup-container .cpro-overlay,.cp-popup-container .cp-popup-wrapper{opacity:0;visibility:hidden;display:none}</style><style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="astra-theme-css-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/style.min.css" media="all">
+<style id="astra-theme-css-inline-css">
+html{font-size:112.5%;}a,.page-title{color:#2727ff;}a:hover,a:focus{color:#2727ff;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Asap',sans-serif;font-weight:400;font-size:18px;font-size:1rem;}blockquote{color:#000000;}h1,.entry-content h1,.entry-content h1 a,h2,.entry-content h2,.entry-content h2 a,h3,.entry-content h3,.entry-content h3 a,h4,.entry-content h4,.entry-content h4 a,h5,.entry-content h5,.entry-content h5 a,h6,.entry-content h6,.entry-content h6 a,.site-title,.site-title a{font-family:'Catamaran',sans-serif;font-weight:800;}.site-title{font-size:35px;font-size:1.9444444444444rem;}header .site-logo-img .custom-logo-link img{max-width:165px;}.astra-logo-svg{width:165px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.2222222222222rem;}.site-header .site-description{font-size:15px;font-size:0.83333333333333rem;}.entry-title{font-size:30px;font-size:1.6666666666667rem;}.comment-reply-title{font-size:29px;font-size:1.6111111111111rem;}.ast-comment-list #cancel-comment-reply-link{font-size:18px;font-size:1rem;}h1,.entry-content h1,.entry-content h1 a{font-size:52px;font-size:2.8888888888889rem;font-weight:700;font-family:'Roboto',sans-serif;line-height:1.5;}h2,.entry-content h2,.entry-content h2 a{font-size:48px;font-size:2.6666666666667rem;font-weight:500;font-family:'Roboto',sans-serif;line-height:1.2;}h3,.entry-content h3,.entry-content h3 a{font-size:20px;font-size:1.1111111111111rem;font-weight:400;font-family:'Roboto',sans-serif;}h4,.entry-content h4,.entry-content h4 a{font-size:20px;font-size:1.1111111111111rem;}h5,.entry-content h5,.entry-content h5 a{font-size:20px;font-size:1.1111111111111rem;}h6,.entry-content h6,.entry-content h6 a{font-size:20px;font-size:1.1111111111111rem;}.ast-single-post .entry-title,.page-title{font-size:22px;font-size:1.2222222222222rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:18px;font-size:1rem;}::selection{background-color:#2727ff;color:#ffffff;}body,h1,.entry-title a,.entry-content h1,.entry-content h1 a,h2,.entry-content h2,.entry-content h2 a,h3,.entry-content h3,.entry-content h3 a,h4,.entry-content h4,.entry-content h4 a,h5,.entry-content h5,.entry-content h5 a,h6,.entry-content h6,.entry-content h6 a{color:#261c3f;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#2727ff;background-color:#2727ff;}.main-header-menu .menu-link,.ast-header-custom-item a{color:#261c3f;}.main-header-menu .menu-item:hover > .menu-link,.main-header-menu .menu-item:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu .menu-item.focus > .menu-link,.main-header-menu .menu-item.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > .menu-link,.main-header-menu .current-menu-ancestor > .menu-link,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#2727ff;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#2727ff;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#2727ff;background-color:#2727ff;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#2727ff;border-color:#2727ff;}.ast-small-footer{color:#ffffff;}.ast-small-footer > .ast-footer-overlay{background-color:#0002f5;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.ast-comment-meta{line-height:1.666666667;font-size:15px;font-size:0.83333333333333rem;}.single .nav-links .nav-previous,.single .nav-links .nav-next,.single .ast-author-details .author-title,.ast-comment-meta{color:#2727ff;}.entry-meta,.entry-meta *{line-height:1.45;color:#2727ff;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *{color:#2727ff;}.ast-404-layout-1 .ast-404-text{font-size:200px;font-size:11.111111111111rem;}.widget-title{font-size:25px;font-size:1.3888888888889rem;color:#261c3f;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#2727ff;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#2727ff;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#2727ff;border-color:#2727ff;}.calendar_wrap #today > a{color:#ffffff;}.ast-pagination a,.page-links .page-link,.single .post-navigation a{color:#2727ff;}.ast-pagination a:hover,.ast-pagination a:focus,.ast-pagination > span:hover:not(.dots),.ast-pagination > span.current,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#2727ff;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#ffffff;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #ffffff;color:#ffffff;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#ffffff;color:#000000;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}@media (max-width:768px){#secondary.secondary{padding-top:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary{margin-top:1.5em;}.ast-page-builder-template #secondary{margin-top:1.5em;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}.ast-pagination{padding-top:1.5em;text-align:center;}.ast-pagination .next.page-numbers{display:inherit;float:none;}}@media (max-width:768px){.ast-page-builder-template.ast-left-sidebar #secondary{padding-right:20px;}.ast-page-builder-template.ast-right-sidebar #secondary{padding-left:20px;}.ast-right-sidebar #primary{padding-right:0;}.ast-right-sidebar #secondary{padding-left:0;}.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}.ast-pagination .prev.page-numbers{padding-left:.5em;}.ast-pagination .next.page-numbers{padding-right:.5em;}}@media (min-width:769px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}.ast-author-box{-js-display:flex;display:flex;}.ast-author-bio{flex:1;}.error404.ast-separate-container #primary,.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:769px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{color:#ffffff;border-color:#0002f5;background-color:#0002f5;border-radius:50px;padding-top:12px;padding-right:30px;padding-bottom:12px;padding-left:30px;font-family:inherit;font-weight:inherit;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#333afd;border-color:#333afd;}@media (min-width:768px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container .comment-respond{padding:1.5em 1em;}}@media (max-width:544px){.ast-comment-list .children{margin-left:0.66666em;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}}@media (max-width:768px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:768px){.ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:0;}.ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:-1em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation{max-width:1240px;margin-left:auto;margin-right:auto;}}body,.ast-separate-container{background-color:#ffffff;background-image:none;}@media (max-width:768px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1,.entry-content h1 a{font-size:30px;}h2,.entry-content h2,.entry-content h2 a{font-size:25px;}h3,.entry-content h3,.entry-content h3 a{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:22px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1,.entry-content h1 a{font-size:22px;}h2,.entry-content h2,.entry-content h2 a{font-size:25px;}h3,.entry-content h3,.entry-content h3 a{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:20px;}.ast-header-break-point .site-branding img,.ast-header-break-point #masthead .site-logo-img .custom-logo-link img{max-width:90px;}.astra-logo-svg{width:90px;}.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:90px;}}@media (max-width:768px){html{font-size:102.6%;}}@media (max-width:544px){html{font-size:102.6%;}}@media (min-width:769px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://www.cursoemvideo.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://www.cursoemvideo.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://www.cursoemvideo.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:768px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#adadad;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu{border-top-width:0px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu{top:-0px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,.ast-desktop .main-header-menu.submenu-with-border .children .menu-link{border-bottom-width:1px;border-style:solid;border-color:rgba(39,44,108,0.15);}@media (min-width:769px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:1px;border-top-color:rgba(9,132,227,0.62);}@media (max-width:920px){.ast-404-layout-1 .ast-404-text{font-size:100px;font-size:5.5555555555556rem;}}.ast-theme-transparent-header #masthead .site-logo-img .transparent-custom-logo .astra-logo-svg{width:165px;}.ast-theme-transparent-header #masthead .site-logo-img .transparent-custom-logo img{ max-width:165px;}@media (min-width:769px){.ast-theme-transparent-header #masthead{position:absolute;left:0;right:0;}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{background:none;}body.elementor-editor-active.ast-theme-transparent-header #masthead,.fl-builder-edit .ast-theme-transparent-header #masthead,body.vc_editor.ast-theme-transparent-header #masthead,body.brz-ed.ast-theme-transparent-header #masthead{z-index:0;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link{display:none;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo{display:inline-block;}.ast-theme-transparent-header .ast-above-header{background-image:none;background-color:transparent;}.ast-theme-transparent-header .ast-below-header{background-image:none;background-color:transparent;}}@media (max-width:768px){.ast-theme-transparent-header #masthead{position:absolute;left:0;right:0;}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{background:none;}body.elementor-editor-active.ast-theme-transparent-header #masthead,.fl-builder-edit .ast-theme-transparent-header #masthead,body.vc_editor.ast-theme-transparent-header #masthead,body.brz-ed.ast-theme-transparent-header #masthead{z-index:0;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link{display:none;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo{display:inline-block;}.ast-theme-transparent-header .ast-above-header{background-image:none;background-color:transparent;}.ast-theme-transparent-header .ast-below-header{background-image:none;background-color:transparent;}}@media (max-width:768px){.ast-theme-transparent-header .main-header-menu .menu-item .sub-menu,.ast-header-break-point.ast-flyout-menu-enable.ast-header-break-point .main-header-bar-navigation .main-header-menu .menu-item .sub-menu{background-color:#ffffff;}}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{border-bottom-width:0;border-bottom-style:solid;}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}.ast-header-break-point .main-header-bar{border-bottom-width:1px;border-bottom-color:#dbdee0;}@media (min-width:769px){.main-header-bar{border-bottom-width:1px;border-bottom-color:#dbdee0;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item,.ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item,.main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}.header-main-layout-1 .ast-flex.main-header-container,.header-main-layout-3 .ast-flex.main-header-container{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}.ast-desktop .astra-menu-animation-slide-up>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transform:translateY(.5em);transition:visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-up>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-up>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}.ast-desktop .astra-menu-animation-slide-down>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transform:translateY(-.5em);transition:visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-down>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-down>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}.ast-desktop .astra-menu-animation-fade>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transition:opacity ease-in-out .3s}.ast-desktop .astra-menu-animation-fade>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transition:opacity ease-in-out .3s}.ast-desktop .astra-menu-animation-fade>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}
+</style>
+<link rel="stylesheet" id="astra-learndash-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash.min.css" media="all">
+<link rel="stylesheet" id="astra-google-fonts-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/style.min(1).css" media="all">
+<link rel="stylesheet" id="wc-block-vendors-style-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/vendors-style.css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/style.css" media="all">
+<link rel="stylesheet" id="learndash-blocks-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/blocks.style.css" media="all">
+<link rel="stylesheet" id="learndash_quiz_front_css-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash_quiz_front.min.css" media="all">
+<link rel="stylesheet" id="jquery-dropdown-css-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.dropdown.min.css" media="all">
+<link rel="stylesheet" id="learndash_lesson_video-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash_lesson_video.min.css" media="all">
+<link rel="stylesheet" id="learndash-front-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash.min(1).css" media="all">
+<style id="learndash-front-inline-css">
+		.learndash-wrapper .ld-item-list .ld-item-list-item.ld-is-next,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label:focus-within {
+			border-color: #0817ff;
+		}
+
+		/*
+		.learndash-wrapper a:not(.ld-button):not(#quiz_continue_link):not(.ld-focus-menu-link):not(.btn-blue):not(#quiz_continue_link):not(.ld-js-register-account):not(#ld-focus-mode-course-heading):not(#btn-join):not(.ld-item-name):not(.ld-table-list-item-preview):not(.ld-lesson-item-preview-heading),
+		 */
+
+		.learndash-wrapper .ld-breadcrumbs a,
+		.learndash-wrapper .ld-lesson-item.ld-is-current-lesson .ld-lesson-item-preview-heading,
+		.learndash-wrapper .ld-lesson-item.ld-is-current-lesson .ld-lesson-title,
+		.learndash-wrapper .ld-primary-color-hover:hover,
+		.learndash-wrapper .ld-primary-color,
+		.learndash-wrapper .ld-primary-color-hover:hover,
+		.learndash-wrapper .ld-primary-color,
+		.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active,
+		.learndash-wrapper .ld-button.ld-button-transparent,
+		.learndash-wrapper .ld-button.ld-button-reverse,
+		.learndash-wrapper .ld-icon-certificate,
+		.learndash-wrapper .ld-login-modal .ld-login-modal-login .ld-modal-heading,
+		#wpProQuiz_user_content a,
+		.learndash-wrapper .ld-item-list .ld-item-list-item a.ld-item-name:hover,
+		.learndash-wrapper .ld-focus-comments__heading-actions .ld-expand-button,
+		.learndash-wrapper .ld-focus-comments__heading a,
+		.learndash-wrapper .ld-focus-comments .comment-respond a,
+		.learndash-wrapper .ld-focus-comment .ld-comment-reply a.comment-reply-link:hover,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate {
+			color: #0817ff !important;
+		}
+
+		.learndash-wrapper .ld-focus-comment.bypostauthor>.ld-comment-wrapper,
+		.learndash-wrapper .ld-focus-comment.role-group_leader>.ld-comment-wrapper,
+		.learndash-wrapper .ld-focus-comment.role-administrator>.ld-comment-wrapper {
+			background-color:rgba(8, 23, 255, 0.03) !important;
+		}
+
+
+		.learndash-wrapper .ld-primary-background,
+		.learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after {
+			background: #0817ff !important;
+		}
+
+
+
+		.learndash-wrapper .ld-course-navigation .ld-lesson-item.ld-is-current-lesson .ld-status-incomplete,
+		.learndash-wrapper .ld-focus-comment.bypostauthor:not(.ptype-sfwd-assignment) >.ld-comment-wrapper>.ld-comment-avatar img,
+		.learndash-wrapper .ld-focus-comment.role-group_leader>.ld-comment-wrapper>.ld-comment-avatar img,
+		.learndash-wrapper .ld-focus-comment.role-administrator>.ld-comment-wrapper>.ld-comment-avatar img {
+			border-color: #0817ff !important;
+		}
+
+
+
+		.learndash-wrapper .ld-loading::before {
+			border-top:3px solid #0817ff !important;
+		}
+
+		.learndash-wrapper .ld-button:hover:not(.learndash-link-previous-incomplete):not(.ld-button-transparent),
+		#learndash-tooltips .ld-tooltip:after,
+		#learndash-tooltips .ld-tooltip,
+		.learndash-wrapper .ld-primary-background,
+		.learndash-wrapper .btn-join,
+		.learndash-wrapper #btn-join,
+		.learndash-wrapper .ld-button:not(.ld-js-register-account):not(.learndash-link-previous-incomplete):not(.ld-button-transparent),
+		.learndash-wrapper .ld-expand-button,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button:not(.wpProQuiz_button_reShowQuestion):not(.wpProQuiz_button_restartQuiz),
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button2,
+		.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading,
+		.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger,
+		.learndash-wrapper .ld-focus-comments .form-submit #submit,
+		.learndash-wrapper .ld-login-modal input[type='submit'],
+		.learndash-wrapper .ld-login-modal .ld-login-modal-register,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_certificate a.btn-blue,
+		.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+		#wpProQuiz_user_content table.wp-list-table thead th,
+		#wpProQuiz_overlay_close,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+			background-color: #0817ff !important;
+		}
+
+
+		.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu .ld-user-menu-items:before {
+			border-bottom-color: #0817ff !important;
+		}
+
+		.learndash-wrapper .ld-button.ld-button-transparent:hover {
+			background: transparent !important;
+		}
+
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+		.learndash-wrapper .ld-button.ld-button-transparent,
+		.learndash-wrapper .ld-button.ld-button-alternate,
+		.learndash-wrapper .ld-expand-button.ld-button-alternate {
+			background-color:transparent !important;
+		}
+
+		.learndash-wrapper .ld-focus-header .ld-user-menu .ld-user-menu-items a,
+		.learndash-wrapper .ld-button.ld-button-reverse:hover,
+		.learndash-wrapper .ld-alert-success .ld-alert-icon.ld-icon-certificate,
+		.learndash-wrapper .ld-alert-warning .ld-button:not(.learndash-link-previous-incomplete),
+		.learndash-wrapper .ld-primary-background.ld-status {
+			color:white !important;
+		}
+
+		.learndash-wrapper .ld-status.ld-status-unlocked {
+			background-color: rgba(8,23,255,0.2) !important;
+			color: #0817ff !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_addToplist {
+			background-color: rgba(8,23,255,0.1) !important;
+			border: 1px solid #0817ff !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_toplistTable th {
+			background: #0817ff !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_toplistTrOdd {
+			background-color: rgba(8,23,255,0.1) !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_reviewDiv li.wpProQuiz_reviewQuestionTarget {
+			background-color: #0817ff !important;
+		}
+
+		
+		.learndash-wrapper #quiz_continue_link,
+		.learndash-wrapper .ld-secondary-background,
+		.learndash-wrapper .learndash_mark_complete_button,
+		.learndash-wrapper #learndash_mark_complete_button,
+		.learndash-wrapper .ld-status-complete,
+		.learndash-wrapper .ld-alert-success .ld-button,
+		.learndash-wrapper .ld-alert-success .ld-alert-icon {
+			background-color: #0817ff !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content a#quiz_continue_link {
+			background-color: #0817ff !important;
+		}
+
+		.learndash-wrapper .course_progress .sending_progress_bar {
+			background: #0817ff !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_button_reShowQuestion:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button_restartQuiz:hover {
+			background-color: #0817ff !important;
+			opacity: 0.75;
+		}
+
+		.learndash-wrapper .ld-secondary-color-hover:hover,
+		.learndash-wrapper .ld-secondary-color,
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+		.learndash-wrapper .ld-focus .ld-focus-header .sfwd-mark-complete:after {
+			color: #0817ff !important;
+		}
+
+		.learndash-wrapper .ld-secondary-in-progress-icon {
+			border-left-color: #0817ff !important;
+			border-top-color: #0817ff !important;
+		}
+
+		.learndash-wrapper .ld-alert-success {
+			border-color: #0817ff;
+			background-color: transparent !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionSolved,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_box li.wpProQuiz_reviewQuestionSolved {
+			background-color: #0817ff !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content  .wpProQuiz_reviewLegend span.wpProQuiz_reviewColor_Answer {
+			background-color: #0817ff !important;
+		}
+
+		
+		.learndash-wrapper .ld-alert-warning {
+			background-color:transparent;
+		}
+
+		.learndash-wrapper .ld-status-waiting,
+		.learndash-wrapper .ld-alert-warning .ld-alert-icon {
+			background-color: #dd3333 !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-color-hover:hover,
+		.learndash-wrapper .ld-tertiary-color,
+		.learndash-wrapper .ld-alert-warning {
+			color: #dd3333 !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-background {
+			background-color: #dd3333 !important;
+		}
+
+		.learndash-wrapper .ld-alert-warning {
+			border-color: #dd3333 !important;
+		}
+
+		.learndash-wrapper .ld-tertiary-background,
+		.learndash-wrapper .ld-alert-warning .ld-alert-icon {
+			color:white !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_reviewQuestion li.wpProQuiz_reviewQuestionReview,
+		.learndash-wrapper .wpProQuiz_content .wpProQuiz_box li.wpProQuiz_reviewQuestionReview {
+			background-color: #dd3333 !important;
+		}
+
+		.learndash-wrapper .wpProQuiz_content  .wpProQuiz_reviewLegend span.wpProQuiz_reviewColor_Review {
+			background-color: #dd3333 !important;
+		}
+
+		
+</style>
+<link rel="stylesheet" id="woocommerce-layout-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/woocommerce-layout.min.css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/woocommerce-smallscreen.min.css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/woocommerce.min.css" media="all">
+<style id="woocommerce-general-inline-css">
+.woocommerce span.onsale, .wc-block-grid__product .wc-block-grid__product-onsale{background-color:#2727ff;color:#ffffff;}.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button,.woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link, .wc-block-grid__product-onsale{color:#ffffff;border-color:#0002f5;background-color:#0002f5;}.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce .woocommerce-message a.button:hover,.woocommerce #respond input#submit:hover,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce input.button:hover, .woocommerce button.button.alt.disabled:hover, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover{color:#ffffff;border-color:#333afd;background-color:#333afd;}.woocommerce-message, .woocommerce-info{border-top-color:#2727ff;}.woocommerce-message::before,.woocommerce-info::before{color:#2727ff;}.woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .widget_layered_nav_filters ul li.chosen a, .woocommerce-page ul.products li.product .ast-woo-product-category, .wc-layered-nav-rating a{color:#261c3f;}.woocommerce nav.woocommerce-pagination ul,.woocommerce nav.woocommerce-pagination ul li{border-color:#2727ff;}.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{background:#2727ff;color:#ffffff;}.woocommerce-MyAccount-navigation-link.is-active a{color:#2727ff;}.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle{background-color:#2727ff;}.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button,.woocommerce-cart table.cart td.actions .button, .woocommerce form.checkout_coupon .button, .woocommerce #respond input#submit, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link{border-radius:50px;padding-top:12px;padding-right:30px;padding-bottom:12px;padding-left:30px;}.woocommerce .star-rating, .woocommerce .comment-form-rating .stars a, .woocommerce .star-rating::before{color:#2727ff;}.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before{background:#2727ff;}.ast-site-header-cart a{color:#261c3f;}.ast-site-header-cart a:focus, .ast-site-header-cart a:hover, .ast-site-header-cart .current-menu-item a{color:#2727ff;}.ast-cart-menu-wrap .count, .ast-cart-menu-wrap .count:after{border-color:#2727ff;color:#2727ff;}.ast-cart-menu-wrap:hover .count{color:#ffffff;background-color:#2727ff;}.ast-site-header-cart .widget_shopping_cart .total .woocommerce-Price-amount{color:#2727ff;}.woocommerce a.remove:hover, .ast-woocommerce-cart-menu .main-header-menu .woocommerce-custom-menu-item .menu-item:hover > .menu-link.remove:hover{color:#2727ff;border-color:#2727ff;background-color:#ffffff;}.ast-site-header-cart .widget_shopping_cart .buttons .button.checkout, .woocommerce .widget_shopping_cart .woocommerce-mini-cart__buttons .checkout.wc-forward{color:#ffffff;border-color:#333afd;background-color:#333afd;}.site-header .ast-site-header-cart-data .button.wc-forward, .site-header .ast-site-header-cart-data .button.wc-forward:hover{color:#ffffff;}.below-header-user-select .ast-site-header-cart .widget, .ast-above-header-section .ast-site-header-cart .widget a, .below-header-user-select .ast-site-header-cart .widget_shopping_cart a{color:#261c3f;}.below-header-user-select .ast-site-header-cart .widget_shopping_cart a:hover, .ast-above-header-section .ast-site-header-cart .widget_shopping_cart a:hover, .below-header-user-select .ast-site-header-cart .widget_shopping_cart a.remove:hover, .ast-above-header-section .ast-site-header-cart .widget_shopping_cart a.remove:hover{color:#2727ff;}@media (min-width:545px) and (max-width:768px){.woocommerce.tablet-columns-6 ul.products li.product, .woocommerce-page.tablet-columns-6 ul.products li.product{width:calc(16.66% - 16.66px);}.woocommerce.tablet-columns-5 ul.products li.product, .woocommerce-page.tablet-columns-5 ul.products li.product{width:calc(20% - 16px);}.woocommerce.tablet-columns-4 ul.products li.product, .woocommerce-page.tablet-columns-4 ul.products li.product{width:calc(25% - 15px);}.woocommerce.tablet-columns-3 ul.products li.product, .woocommerce-page.tablet-columns-3 ul.products li.product{width:calc(33.33% - 14px);}.woocommerce.tablet-columns-2 ul.products li.product, .woocommerce-page.tablet-columns-2 ul.products li.product{width:calc(50% - 10px);}.woocommerce.tablet-columns-1 ul.products li.product, .woocommerce-page.tablet-columns-1 ul.products li.product{width:100%;}.woocommerce div.product .related.products ul.products li.product{width:calc(33.33% - 14px);}}@media (min-width:545px) and (max-width:768px){.woocommerce[class*="columns-"].columns-3 > ul.products li.product, .woocommerce[class*="columns-"].columns-4 > ul.products li.product, .woocommerce[class*="columns-"].columns-5 > ul.products li.product, .woocommerce[class*="columns-"].columns-6 > ul.products li.product{width:calc(33.33% - 14px);margin-right:20px;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product:nth-child(3n), .woocommerce[class*="columns-"].columns-4 > ul.products li.product:nth-child(3n), .woocommerce[class*="columns-"].columns-5 > ul.products li.product:nth-child(3n), .woocommerce[class*="columns-"].columns-6 > ul.products li.product:nth-child(3n){margin-right:0;clear:right;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product:nth-child(3n+1), .woocommerce[class*="columns-"].columns-4 > ul.products li.product:nth-child(3n+1), .woocommerce[class*="columns-"].columns-5 > ul.products li.product:nth-child(3n+1), .woocommerce[class*="columns-"].columns-6 > ul.products li.product:nth-child(3n+1){clear:left;}.woocommerce[class*="columns-"] ul.products li.product:nth-child(n), .woocommerce-page[class*="columns-"] ul.products li.product:nth-child(n){margin-right:20px;clear:none;}.woocommerce.tablet-columns-2 ul.products li.product:nth-child(2n), .woocommerce-page.tablet-columns-2 ul.products li.product:nth-child(2n), .woocommerce.tablet-columns-3 ul.products li.product:nth-child(3n), .woocommerce-page.tablet-columns-3 ul.products li.product:nth-child(3n), .woocommerce.tablet-columns-4 ul.products li.product:nth-child(4n), .woocommerce-page.tablet-columns-4 ul.products li.product:nth-child(4n), .woocommerce.tablet-columns-5 ul.products li.product:nth-child(5n), .woocommerce-page.tablet-columns-5 ul.products li.product:nth-child(5n), .woocommerce.tablet-columns-6 ul.products li.product:nth-child(6n), .woocommerce-page.tablet-columns-6 ul.products li.product:nth-child(6n){margin-right:0;clear:right;}.woocommerce.tablet-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce-page.tablet-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce.tablet-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce-page.tablet-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce.tablet-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce-page.tablet-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce.tablet-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce-page.tablet-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce.tablet-columns-6 ul.products li.product:nth-child(6n+1), .woocommerce-page.tablet-columns-6 ul.products li.product:nth-child(6n+1){clear:left;}.woocommerce div.product .related.products ul.products li.product:nth-child(3n){margin-right:0;clear:right;}.woocommerce div.product .related.products ul.products li.product:nth-child(3n+1){clear:left;}}@media (min-width:769px){.woocommerce #reviews #comments{width:55%;float:left;}.woocommerce #reviews #review_form_wrapper{width:45%;float:right;padding-left:2em;}.woocommerce form.checkout_coupon{width:50%;}}@media (max-width:768px){.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack.ast-no-menu-items .ast-site-header-cart, .ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-3.ast-mobile-header-stack.ast-no-menu-items .ast-site-header-cart{padding-right:0;padding-left:0;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack .main-header-bar{text-align:center;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack .ast-site-header-cart, .ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-1.ast-mobile-header-stack .ast-mobile-menu-buttons{display:inline-block;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-2.ast-mobile-header-inline .site-branding{flex:auto;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-3.ast-mobile-header-stack .site-branding{flex:0 0 100%;}.ast-header-break-point.ast-woocommerce-cart-menu .header-main-layout-3.ast-mobile-header-stack .main-header-container{display:flex;justify-content:center;}.woocommerce-cart .woocommerce-shipping-calculator .button{width:100%;}.woocommerce div.product div.images, .woocommerce div.product div.summary, .woocommerce #content div.product div.images, .woocommerce #content div.product div.summary, .woocommerce-page div.product div.images, .woocommerce-page div.product div.summary, .woocommerce-page #content div.product div.images, .woocommerce-page #content div.product div.summary{float:none;width:100%;}.woocommerce-cart table.cart td.actions .ast-return-to-shop{display:block;text-align:center;margin-top:1em;}}@media (max-width:544px){.ast-separate-container .ast-woocommerce-container{padding:.54em 1em 1.33333em;}.woocommerce-message, .woocommerce-error, .woocommerce-info{display:flex;flex-wrap:wrap;}.woocommerce-message a.button, .woocommerce-error a.button, .woocommerce-info a.button{order:1;margin-top:.5em;}.woocommerce.mobile-columns-6 ul.products li.product, .woocommerce-page.mobile-columns-6 ul.products li.product{width:calc(16.66% - 16.66px);}.woocommerce.mobile-columns-5 ul.products li.product, .woocommerce-page.mobile-columns-5 ul.products li.product{width:calc(20% - 16px);}.woocommerce.mobile-columns-4 ul.products li.product, .woocommerce-page.mobile-columns-4 ul.products li.product{width:calc(25% - 15px);}.woocommerce.mobile-columns-3 ul.products li.product, .woocommerce-page.mobile-columns-3 ul.products li.product{width:calc(33.33% - 14px);}.woocommerce.mobile-columns-2 ul.products li.product, .woocommerce-page.mobile-columns-2 ul.products li.product{width:calc(50% - 10px);}.woocommerce.mobile-columns-1 ul.products li.product, .woocommerce-page.mobile-columns-1 ul.products li.product{width:100%;}.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering{float:none;margin-bottom:2em;width:100%;}.woocommerce ul.products a.button, .woocommerce-page ul.products a.button{padding:0.5em 0.75em;}.woocommerce div.product .related.products ul.products li.product{width:calc(50% - 10px);}.woocommerce table.cart td.actions .button, .woocommerce #content table.cart td.actions .button, .woocommerce-page table.cart td.actions .button, .woocommerce-page #content table.cart td.actions .button{padding-left:1em;padding-right:1em;}.woocommerce #content table.cart .button, .woocommerce-page #content table.cart .button{width:100%;}.woocommerce #content table.cart .product-thumbnail, .woocommerce-page #content table.cart .product-thumbnail{display:block;text-align:center !important;}.woocommerce #content table.cart .product-thumbnail::before, .woocommerce-page #content table.cart .product-thumbnail::before{display:none;}.woocommerce #content table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon{float:none;}.woocommerce #content table.cart td.actions .coupon .button, .woocommerce-page #content table.cart td.actions .coupon .button{flex:1;}.woocommerce #content div.product .woocommerce-tabs ul.tabs li a, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a{display:block;}}@media (max-width:544px){.woocommerce[class*="columns-"].columns-3 > ul.products li.product, .woocommerce[class*="columns-"].columns-4 > ul.products li.product, .woocommerce[class*="columns-"].columns-5 > ul.products li.product, .woocommerce[class*="columns-"].columns-6 > ul.products li.product{width:calc(50% - 10px);margin-right:20px;}.woocommerce-page[class*=columns-] ul.products li.product:nth-child(n), .woocommerce[class*=columns-] ul.products li.product:nth-child(n){margin-right:20px;clear:none;}.woocommerce-page[class*=columns-].columns-3>ul.products li.product:nth-child(2n), .woocommerce-page[class*=columns-].columns-4>ul.products li.product:nth-child(2n), .woocommerce-page[class*=columns-].columns-5>ul.products li.product:nth-child(2n), .woocommerce-page[class*=columns-].columns-6>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-3>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-4>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-5>ul.products li.product:nth-child(2n), .woocommerce[class*=columns-].columns-6>ul.products li.product:nth-child(2n){margin-right:0;clear:right;}.woocommerce[class*="columns-"].columns-3 > ul.products li.product:nth-child(2n+1), .woocommerce[class*="columns-"].columns-4 > ul.products li.product:nth-child(2n+1), .woocommerce[class*="columns-"].columns-5 > ul.products li.product:nth-child(2n+1), .woocommerce[class*="columns-"].columns-6 > ul.products li.product:nth-child(2n+1){clear:left;}.woocommerce[class*="columns-"] ul.products li.product:nth-child(n), .woocommerce-page[class*="columns-"] ul.products li.product:nth-child(n){margin-right:20px;clear:none;}.woocommerce.mobile-columns-6 ul.products li.product:nth-child(6n), .woocommerce-page.mobile-columns-6 ul.products li.product:nth-child(6n), .woocommerce.mobile-columns-5 ul.products li.product:nth-child(5n), .woocommerce-page.mobile-columns-5 ul.products li.product:nth-child(5n), .woocommerce.mobile-columns-4 ul.products li.product:nth-child(4n), .woocommerce-page.mobile-columns-4 ul.products li.product:nth-child(4n), .woocommerce.mobile-columns-3 ul.products li.product:nth-child(3n), .woocommerce-page.mobile-columns-3 ul.products li.product:nth-child(3n), .woocommerce.mobile-columns-2 ul.products li.product:nth-child(2n), .woocommerce-page.mobile-columns-2 ul.products li.product:nth-child(2n), .woocommerce div.product .related.products ul.products li.product:nth-child(2n){margin-right:0;clear:right;}.woocommerce.mobile-columns-6 ul.products li.product:nth-child(6n+1), .woocommerce-page.mobile-columns-6 ul.products li.product:nth-child(6n+1), .woocommerce.mobile-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce-page.mobile-columns-5 ul.products li.product:nth-child(5n+1), .woocommerce.mobile-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce-page.mobile-columns-4 ul.products li.product:nth-child(4n+1), .woocommerce.mobile-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce-page.mobile-columns-3 ul.products li.product:nth-child(3n+1), .woocommerce.mobile-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce-page.mobile-columns-2 ul.products li.product:nth-child(2n+1), .woocommerce div.product .related.products ul.products li.product:nth-child(2n+1){clear:left;}.woocommerce ul.products a.button.loading::after, .woocommerce-page ul.products a.button.loading::after{display:inline-block;margin-left:5px;position:initial;}.woocommerce.mobile-columns-1 ul.products li.product:nth-child(n), .woocommerce-page.mobile-columns-1 ul.products li.product:nth-child(n){margin-right:0;}.woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li{display:block;margin-right:0;}}@media (min-width:769px){.ast-woo-shop-archive .site-content > .ast-container{max-width:1240px;}}@media (min-width:769px){.woocommerce #content .ast-woocommerce-container div.product div.images, .woocommerce .ast-woocommerce-container div.product div.images, .woocommerce-page #content .ast-woocommerce-container div.product div.images, .woocommerce-page .ast-woocommerce-container div.product div.images{width:50%;}.woocommerce #content .ast-woocommerce-container div.product div.summary, .woocommerce .ast-woocommerce-container div.product div.summary, .woocommerce-page #content .ast-woocommerce-container div.product div.summary, .woocommerce-page .ast-woocommerce-container div.product div.summary{width:46%;}.woocommerce.woocommerce-checkout form #customer_details.col2-set .col-1, .woocommerce.woocommerce-checkout form #customer_details.col2-set .col-2, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-1, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set .col-2{float:none;width:auto;}}@media (min-width:769px){.woocommerce.woocommerce-checkout form #customer_details.col2-set, .woocommerce-page.woocommerce-checkout form #customer_details.col2-set{width:55%;float:left;margin-right:4.347826087%;}.woocommerce.woocommerce-checkout form #order_review, .woocommerce.woocommerce-checkout form #order_review_heading, .woocommerce-page.woocommerce-checkout form #order_review, .woocommerce-page.woocommerce-checkout form #order_review_heading{width:40%;float:right;margin-right:0;clear:right;}}
+</style>
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<script>document.addEventListener('DOMContentLoaded', function(event) {  if( typeof cpLoadCSS !== 'undefined' ) { cpLoadCSS('https://www.cursoemvideo.com/wp-content/plugins/convertpro/assets/modules/css/cp-popup.min.css?ver=1.4.9', 0, 'all'); } }); </script>
+<link rel="stylesheet" id="font-awesome-5-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/all.min.css" media="all">
+<link rel="stylesheet" id="jquery-bxslider-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.bxslider.css" media="all">
+<link rel="stylesheet" id="fl-builder-layout-bundle-0170a3a0b2d1c810d355dd75e89215cd-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/0170a3a0b2d1c810d355dd75e89215cd-layout-bundle.css" media="all">
+<link rel="stylesheet" id="astra-addon-css-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/astra-addon-5f1ffbe785b9a1-58816723.css" media="all">
+<style id="astra-addon-css-inline-css">
+#ast-scroll-top{background-color:#2727ff;font-size:15px;font-size:0.83333333333333rem;border-radius:30px;}.woocommerce.archive ul.products li a.button,.woocommerce > ul.products li a.button,.woocommerce related a.button,.woocommerce .related a.button,.woocommerce .up-sells a.button .woocommerce .cross-sells a.button{padding:px px;}.woocommerce ul.products li.product .onsale.circle-outline,.woocommerce ul.products li.product .onsale.square-outline,.woocommerce div.product .onsale.circle-outline,.woocommerce div.product .onsale.square-outline{background:#ffffff;border:2px solid #2727ff;color:#2727ff;}.ast-shop-load-more:hover{color:#ffffff;border-color:#2727ff;background-color:#2727ff;}.ast-loader > div{background-color:#2727ff;}.woocommerce nav.woocommerce-pagination ul li > span.current,.woocommerce nav.woocommerce-pagination ul li > .page-numbers{border-color:#2727ff;}.ast-woo-two-step-checkout .ast-checkout-slides .flex-prev.button{color:#ffffff;border-color:#333afd;background-color:#333afd;}.widget_layered_nav_filters ul li.chosen a::before{color:#2727ff;}.ast-site-header-cart i.astra-icon:after{background:#2727ff;color:#ffffff;}.single-product div.product .entry-title{font-size:30px;font-size:1.6666666666667rem;font-family:'Catamaran',sans-serif;}.single-product div.product .woocommerce-product-details__short-description,.single-product div.product .product_meta,.single-product div.product .entry-content{font-family:'Asap',sans-serif;}.single-product div.product p.price,.single-product div.product span.price{font-family:'Asap',sans-serif;}.woocommerce ul.products li.product .woocommerce-loop-product__title,.woocommerce-page ul.products li.product .woocommerce-loop-product__title,.wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title{font-family:'Asap',sans-serif;}.woocommerce ul.products li.product .price,.woocommerce-page ul.products li.product .price,.wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-price{font-family:'Asap',sans-serif;}.single-product div.product .woocommerce-breadcrumb{font-family:'Asap',sans-serif;}.woocommerce ul.products li.product .ast-woo-product-category,.woocommerce-page ul.products li.product .ast-woo-product-category,.woocommerce ul.products li.product .ast-woo-shop-product-description,.woocommerce-page ul.products li.product .ast-woo-shop-product-description{font-family:'Asap',sans-serif;}li.ast-masthead-custom-menu-items.woocommerce-custom-menu-item,.ast-masthead-custom-menu-items.woocommerce-custom-menu-item{padding:0;}.ast-header-break-point li.ast-masthead-custom-menu-items.woocommerce-custom-menu-item{padding-left:20px;padding-right:20px;margin:0;}.ast-header-break-point .ast-masthead-custom-menu-items.woocommerce-custom-menu-item{margin-left:1em;margin-right:1em;}.ast-header-break-point .ast-above-header-mobile-inline.mobile-header-order-2 .ast-masthead-custom-menu-items.woocommerce-custom-menu-item{margin-left:0;}.ast-header-break-point li.ast-masthead-custom-menu-items.woocommerce-custom-menu-item .ast-addon-cart-wrap{display:inline-block;}.woocommerce-custom-menu-item .ast-addon-cart-wrap{padding:0 .6em;}.ast-woocommerce-cart-menu .ast-cart-menu-wrap .count,.ast-woocommerce-cart-menu .ast-cart-menu-wrap .count:after{border-color:#2727ff;color:#2727ff;}.ast-woocommerce-cart-menu .ast-cart-menu-wrap:hover .count{color:#ffffff;background-color:#2727ff;}.ast-menu-cart-outline .ast-addon-cart-wrap{background:#ffffff;border:1px solid #2727ff;color:#2727ff;}.ast-woocommerce-cart-menu .ast-menu-cart-fill .ast-cart-menu-wrap .count,.ast-menu-cart-fill .ast-addon-cart-wrap{background-color:#2727ff;color:#ffffff;}.ast-site-header-cart.ast-menu-cart-outline .ast-addon-cart-wrap,.ast-site-header-cart.ast-menu-cart-fill .ast-addon-cart-wrap{border-radius:3px;}@media screen and ( min-width: 769px ) { .woocommerce div.product.ast-product-gallery-layout-vertical .onsale {left: 12.5%;left: -webkit-calc(12.5% - .5em);left: calc(12.5% - .5em);} .woocommerce div.product.ast-product-gallery-with-no-image .onsale {top:-.5em;left: -.5em;} }@media (min-width:769px){.woocommerce #content .ast-woocommerce-container div.product div.images,.woocommerce .ast-woocommerce-container div.product div.images,.woocommerce-page #content .ast-woocommerce-container div.product div.images,.woocommerce-page .ast-woocommerce-container div.product div.images{width:50%;}.woocommerce #content .ast-woocommerce-container div.product div.summary,.woocommerce .ast-woocommerce-container div.product div.summary,.woocommerce-page #content .ast-woocommerce-container div.product div.summary,.woocommerce-page .ast-woocommerce-container div.product div.summary{width:46%;}.woocommerce div.product.ast-product-gallery-layout-vertical div.images .flex-control-thumbs{width:calc(25% - 1em);}.woocommerce div.product.ast-product-gallery-layout-vertical div.images .flex-control-thumbs li{width:100%;}.woocommerce.ast-woo-two-step-checkout form #order_review,.woocommerce.ast-woo-two-step-checkout form #order_review_heading,.woocommerce-page.ast-woo-two-step-checkout form #order_review,.woocommerce-page.ast-woo-two-step-checkout form #order_review_heading,.woocommerce.ast-woo-two-step-checkout form #customer_details.col2-set,.woocommerce-page.ast-woo-two-step-checkout form #customer_details.col2-set{width:100%;}}@media (min-width:769px){.woocommerce div.product.ast-product-gallery-layout-vertical .flex-viewport{width:75%;float:right;}}@media (max-width:769px){.ast-product-navigation-wrapper{text-align:center;}}@media (min-width:768px){#ast-quick-view-content div.summary form.cart.stick{position:absolute;bottom:0;background:#fff;margin:0;padding:20px 30px 30px 0;width:calc(50% - 30px);}}@media (max-width:768px){#ast-quick-view-content div.summary form.cart.stick .button{padding:10px;}#ast-quick-view-modal .ast-content-main-wrapper{top:0;right:0;bottom:0;left:0;transform:none !important;width:100%;position:relative;overflow:hidden;padding:10%;}#ast-quick-view-content div.summary,#ast-quick-view-content div.images{min-width:auto;}#ast-quick-view-modal.open .ast-content-main{transform:none !important;}.woocommerce .astra-shop-filter-button,.woocommerce button.astra-shop-filter-button,.woocommerce-page .astra-shop-filter-button,.woocommerce-page button.astra-shop-filter-button{margin-bottom:10px;}}@media (max-width:768px){.woocommerce div.product .related.products ul.products li.product,.woocommerce[class*="rel-up-columns-"] div.product .related.products ul.products li.product,.woocommerce-page div.product .related.products ul.products li.product,.woocommerce-page[class*="rel-up-columns-"] div.product .related.products ul.products li.product{margin-right:20px;clear:none;}}@media (min-width:545px) and (max-width:768px){.woocommerce-page.tablet-rel-up-columns-1 div.product .related.products ul.products li.product,.woocommerce-page.tablet-rel-up-columns-1 div.product .up-sells ul.products li.product,.woocommerce.tablet-rel-up-columns-1 div.product .related.products ul.products li.product,.woocommerce.tablet-rel-up-columns-1 div.product .up-sells ul.products li.product{width:100%;margin-right:0;}.woocommerce-page.tablet-rel-up-columns-2 div.product .related.products ul.products li.product,.woocommerce-page.tablet-rel-up-columns-2 div.product .up-sells ul.products li.product,.woocommerce.tablet-rel-up-columns-2 div.product .related.products ul.products li.product,.woocommerce.tablet-rel-up-columns-2 div.product .up-sells ul.products li.product{width:calc(50% - 10px);margin-right:20px;}.woocommerce-page.tablet-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n),.woocommerce-page.tablet-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n),.woocommerce.tablet-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n),.woocommerce.tablet-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n){clear:right;margin-right:0;}.woocommerce-page.tablet-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n+1),.woocommerce-page.tablet-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n+1),.woocommerce.tablet-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n+1),.woocommerce.tablet-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n+1){clear:left;}.woocommerce-page.tablet-rel-up-columns-3 div.product .related.products ul.products li.product,.woocommerce-page.tablet-rel-up-columns-3 div.product .up-sells ul.products li.product,.woocommerce.tablet-rel-up-columns-3 div.product .related.products ul.products li.product,.woocommerce.tablet-rel-up-columns-3 div.product .up-sells ul.products li.product{width:calc(33.33% - 14px);}.woocommerce-page.tablet-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n),.woocommerce-page.tablet-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n),.woocommerce.tablet-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n),.woocommerce.tablet-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n){clear:right;margin-right:0;}.woocommerce-page.tablet-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n+1),.woocommerce-page.tablet-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n+1),.woocommerce.tablet-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n+1),.woocommerce.tablet-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n+1){clear:left;}.woocommerce-page.tablet-rel-up-columns-4 div.product .related.products ul.products li.product,.woocommerce-page.tablet-rel-up-columns-4 div.product .up-sells ul.products li.product,.woocommerce.tablet-rel-up-columns-4 div.product .related.products ul.products li.product,.woocommerce.tablet-rel-up-columns-4 div.product .up-sells ul.products li.product{width:calc(25% - 15px);}.woocommerce-page.tablet-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n),.woocommerce-page.tablet-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n),.woocommerce.tablet-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n),.woocommerce.tablet-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n){clear:right;margin-right:0;}.woocommerce-page.tablet-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n+1),.woocommerce-page.tablet-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n+1),.woocommerce.tablet-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n+1),.woocommerce.tablet-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n+1){clear:left;}.woocommerce-page.tablet-rel-up-columns-5 div.product .related.products ul.products li.product,.woocommerce-page.tablet-rel-up-columns-5 div.product .up-sells ul.products li.product,.woocommerce.tablet-rel-up-columns-5 div.product .related.products ul.products li.product,.woocommerce.tablet-rel-up-columns-5 div.product .up-sells ul.products li.product{width:calc(20% - 16px);}.woocommerce-page.tablet-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n),.woocommerce-page.tablet-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n),.woocommerce.tablet-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n),.woocommerce.tablet-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n){clear:right;margin-right:0;}.woocommerce-page.tablet-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n+1),.woocommerce-page.tablet-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n+1),.woocommerce.tablet-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n+1),.woocommerce.tablet-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n+1){clear:left;}.woocommerce-page.tablet-rel-up-columns-6 div.product .related.products ul.products li.product,.woocommerce-page.tablet-rel-up-columns-6 div.product .up-sells ul.products li.product,.woocommerce.tablet-rel-up-columns-6 div.product .related.products ul.products li.product,.woocommerce.tablet-rel-up-columns-6 div.product .up-sells ul.products li.product{width:calc(16.66% - 17px);}.woocommerce-page.tablet-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n),.woocommerce-page.tablet-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n),.woocommerce.tablet-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n),.woocommerce.tablet-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n){clear:right;margin-right:0;}.woocommerce-page.tablet-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n+1),.woocommerce-page.tablet-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n+1),.woocommerce.tablet-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n+1),.woocommerce.tablet-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n+1){clear:left;}}@media (min-width:545px){#ast-quick-view-content div.summary{content:544;overflow-y:auto;}}@media (max-width:544px){.woocommerce-page.mobile-rel-up-columns-1 div.product .related.products ul.products li.product,.woocommerce-page.mobile-rel-up-columns-1 div.product .up-sells ul.products li.product,.woocommerce.mobile-rel-up-columns-1 div.product .related.products ul.products li.product,.woocommerce.mobile-rel-up-columns-1 div.product .up-sells ul.products li.product{width:100%;margin-right:0;}.woocommerce-page.mobile-rel-up-columns-2 div.product .related.products ul.products li.product,.woocommerce-page.mobile-rel-up-columns-2 div.product .up-sells ul.products li.product,.woocommerce.mobile-rel-up-columns-2 div.product .related.products ul.products li.product,.woocommerce.mobile-rel-up-columns-2 div.product .up-sells ul.products li.product{width:calc(50% - 10px);}.woocommerce-page.mobile-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n),.woocommerce-page.mobile-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n),.woocommerce.mobile-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n),.woocommerce.mobile-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n){margin-right:0;clear:right;}.woocommerce-page.mobile-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n+1),.woocommerce-page.mobile-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n+1),.woocommerce.mobile-rel-up-columns-2 div.product .related.products ul.products li.product:nth-child(2n+1),.woocommerce.mobile-rel-up-columns-2 div.product .up-sells ul.products li.product:nth-child(2n+1){clear:left;}.woocommerce-page.mobile-rel-up-columns-3 div.product .related.products ul.products li.product,.woocommerce-page.mobile-rel-up-columns-3 div.product .up-sells ul.products li.product,.woocommerce.mobile-rel-up-columns-3 div.product .related.products ul.products li.product,.woocommerce.mobile-rel-up-columns-3 div.product .up-sells ul.products li.product{width:calc(33.33% - 14px);margin-right:20px;}.woocommerce-page.mobile-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n),.woocommerce-page.mobile-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n),.woocommerce.mobile-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n),.woocommerce.mobile-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n){margin-right:0;clear:right;}.woocommerce-page.mobile-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n+1),.woocommerce-page.mobile-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n+1),.woocommerce.mobile-rel-up-columns-3 div.product .related.products ul.products li.product:nth-child(3n+1),.woocommerce.mobile-rel-up-columns-3 div.product .up-sells ul.products li.product:nth-child(3n+1){clear:left;}.woocommerce-page.mobile-rel-up-columns-4 div.product .related.products ul.products li.product,.woocommerce-page.mobile-rel-up-columns-4 div.product .up-sells ul.products li.product,.woocommerce.mobile-rel-up-columns-4 div.product .related.products ul.products li.product,.woocommerce.mobile-rel-up-columns-4 div.product .up-sells ul.products li.product{width:calc(25% - 15px);margin-right:20px;clear:none;}.woocommerce-page.mobile-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n),.woocommerce-page.mobile-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n),.woocommerce.mobile-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n),.woocommerce.mobile-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n){clear:right;margin-right:0;}.woocommerce-page.mobile-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n+1),.woocommerce-page.mobile-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n+1),.woocommerce.mobile-rel-up-columns-4 div.product .related.products ul.products li.product:nth-child(4n+1),.woocommerce.mobile-rel-up-columns-4 div.product .up-sells ul.products li.product:nth-child(4n+1){clear:left;}.woocommerce-page.mobile-rel-up-columns-5 div.product .related.products ul.products li.product,.woocommerce-page.mobile-rel-up-columns-5 div.product .up-sells ul.products li.product,.woocommerce.mobile-rel-up-columns-5 div.product .related.products ul.products li.product,.woocommerce.mobile-rel-up-columns-5 div.product .up-sells ul.products li.product{width:calc(20% - 16px);}.woocommerce-page.mobile-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n),.woocommerce-page.mobile-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n),.woocommerce.mobile-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n),.woocommerce.mobile-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n){margin-right:0;clear:right;}.woocommerce-page.mobile-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n+1),.woocommerce-page.mobile-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n+1),.woocommerce.mobile-rel-up-columns-5 div.product .related.products ul.products li.product:nth-child(5n+1),.woocommerce.mobile-rel-up-columns-5 div.product .up-sells ul.products li.product:nth-child(5n+1){clear:left;}.woocommerce-page.mobile-rel-up-columns-6 div.product .related.products ul.products li.product,.woocommerce-page.mobile-rel-up-columns-6 div.product .up-sells ul.products li.product,.woocommerce.mobile-rel-up-columns-6 div.product .related.products ul.products li.product,.woocommerce.mobile-rel-up-columns-6 div.product .up-sells ul.products li.product{width:calc(16.66% - 17px);}.woocommerce-page.mobile-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n),.woocommerce-page.mobile-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n),.woocommerce.mobile-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n),.woocommerce.mobile-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n){margin-right:0;clear:right;}.woocommerce-page.mobile-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n+1),.woocommerce-page.mobile-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n+1),.woocommerce.mobile-rel-up-columns-6 div.product .related.products ul.products li.product:nth-child(6n+1),.woocommerce.mobile-rel-up-columns-6 div.product .up-sells ul.products li.product:nth-child(6n+1){clear:left;}.woocommerce button.astra-shop-filter-button,.woocommerce-page button.astra-shop-filter-button{float:none;display:block;}#ast-quick-view-content{max-width:initial !important;max-height:initial !important;}#ast-quick-view-content div.images{width:100%;float:none;}#ast-quick-view-content div.summary{width:100%;float:left;margin:0;padding:15px;max-height:initial !important;}.ast-header-break-point .ast-above-header-mobile-inline.mobile-header-order-2 .ast-masthead-custom-menu-items.woocommerce-custom-menu-item{margin-left:0;}.ast-header-break-point .ast-above-header-mobile-inline.mobile-header-order-3 .ast-masthead-custom-menu-items.woocommerce-custom-menu-item,.ast-header-break-point .ast-above-header-mobile-inline.mobile-header-order-5 .ast-masthead-custom-menu-items.woocommerce-custom-menu-item{margin-right:0;}}.ast-desktop .ast-mega-menu-enabled.main-header-menu .menu-item-heading > .menu-link{font-weight:800;font-size:1.6em;}
+</style>
+<link rel="stylesheet" id="astra-child-theme-css-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/style(1).css" media="all">
+<link rel="stylesheet" id="pp-animate-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/animate.min.css" media="all">
+<link rel="stylesheet" id="fl-builder-google-fonts-8cabe02eb650094cd086babd1d8d1f6f-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/css(1)" media="all">
+<link rel="stylesheet" id="microthemer-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/active-styles.css" media="all">
+<link rel="stylesheet" id="microthemer-overlay-css-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/frontend.min.css" media="all">
+<!--[if IE]>
+<script src='https://www.cursoemvideo.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.1'></script>
+<script>
+flexibility(document.documentElement);
+</script>
+<![endif]-->
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/frontend.blocks.js.transferir"></script>
+<script>
+var uabb = {"ajax_url":"https:\/\/www.cursoemvideo.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery-migrate.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/imagesloaded.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-42671530-1', {"anonymize_ip":true} );
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/frontend.js.transferir"></script>
+<link rel="https://api.w.org/" href="https://www.cursoemvideo.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cursoemvideo.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.cursoemvideo.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Instalações e configurações importantes – Curso de Git e GitHub" href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/instalacoes-e-configuracoes-importantes-curso-de-git-e-github/">
+<link rel="next" title="Clonando um Repositório – Curso de Git e GitHub" href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/clonando-um-repositorio-curso-de-git-e-github/">
+<meta name="generator" content="WordPress 5.4.2">
+<meta name="generator" content="WooCommerce 4.3.1">
+<link rel="canonical" href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/">
+<link rel="shortlink" href="https://www.cursoemvideo.com/?p=41709">
+<link rel="alternate" type="application/json+oembed" href="https://www.cursoemvideo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cursoemvideo.com%2Fcourse%2Fcurso-de-git-e-github%2Faulas%2Faulas-de-git-e-github%2Fmodulos%2Fcriando-o-primeiro-repositorio-curso-de-git-e-github%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.cursoemvideo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cursoemvideo.com%2Fcourse%2Fcurso-de-git-e-github%2Faulas%2Faulas-de-git-e-github%2Fmodulos%2Fcriando-o-primeiro-repositorio-curso-de-git-e-github%2F&amp;format=xml">
+		<script>
+			var bb_powerpack = {
+				ajaxurl: 'https://www.cursoemvideo.com/wp-admin/admin-ajax.php'
+			};
+		</script>
+		<meta name="generator" content="Site Kit by Google 1.13.0">                    <script> window.MTDynFrontData = {"iframe-url":"https%3A%2F%2Fwww.cursoemvideo.com%2Fcourse%2Fcurso-de-git-e-github%2Faulas%2Faulas-de-git-e-github%2Fmodulos%2Fcriando-o-primeiro-repositorio-curso-de-git-e-github%2F","mt-show-admin-bar":1,"page-title":"Criando o primeiro Reposit\u00f3rio &#8211; Curso de Git e GitHub"}; </script>
+                    	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cropped-cursoemvideo-logo-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cropped-cursoemvideo-logo-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cropped-cursoemvideo-logo-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cropped-cursoemvideo-logo-270x270.png">
+	<style type="text/css"> #cp_button-1-44490 .cp_loader_container {border-left-color:rgb(255, 255, 255);}</style><style type="text/css"> #cp_button-1-44490 .cp_loader_container.cp_success_loader_container {border-color:rgb(255, 255, 255);}</style><style type="text/css"> #cp_button-1-44490 i.cp-button-loader-style.draw.success-loader-style {color:rgb(255, 255, 255);}</style><style type="text/css"> #cp_button-1-44490 .cp-target.cp-field-element.cp-button-field.cp-button-loading:hover {background:rgb(53, 132, 0);}</style><style type="text/css"> #cp_button-1-44490 .cp-target.cp-field-element.cp-button-field.cp-button-loading:hover {border-color:rgb(155, 89, 182);}</style></head>
+	<body class="sfwd-topic-template-default single single-sfwd-topic postid-41709 logged-in theme-astra mt-41709 mt-sfwd-topic-criando-o-primeiro-repositorio-curso-de-git-e-github ld-in-focus-mode woocommerce-js fl-theme-builder-footer fl-theme-builder-header fl-theme-builder-part ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-2.5.1 ast-header-custom-item-inside ast-blog-single-style-1 ast-custom-post-type ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-theme-transparent-header ast-normal-title-enabled astra-addon-2.6.1 learndash-cpt learndash-cpt-sfwd-topic learndash-embed-responsive   fl-builder-breakpoint-large" style="">
+
+		<div class="learndash-wrapper">
+						<div class="ld-focus">
+				
+<div class="ld-focus-sidebar">
+	<div class="ld-course-navigation-heading">
+
+		
+		<span class="ld-focus-sidebar-trigger">
+									<span class="ld-icon ld-icon-arrow-left"></span>
+								</span>
+
+		
+		
+		<h3>
+			<a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/" id="ld-focus-mode-course-heading">
+				<span class="ld-icon ld-icon-content"></span>
+				Git e GitHub [20 Horas]			</a>
+		</h3>
+			</div>
+	<div class="ld-focus-sidebar-wrapper">
+				<div class="ld-course-navigation">
+			<div class="ld-course-navigation-list">
+				<div class="ld-lesson-navigation">
+					<div class="ld-lesson-items" id="ld-lesson-list-41356">
+						
+<div class="ld-lesson-item ld-is-current-lesson learndash-incomplete is_not_sample">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/">
+
+			<div class="ld-status-icon ld-status-in-progress ld-secondary-in-progress-icon"></div>
+			<div class="ld-lesson-title">
+				Aulas de Git e GitHub			</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+
+		
+			<span class="ld-expand-button ld-button-alternate ld-expanded" aria-label="Expandir Lição" data-ld-expands="ld-nav-content-list-41692" data-ld-collapse-text="false">
+				<span class="ld-icon-arrow-down ld-icon ld-primary-background"></span>
+				<span class="ld-text ld-primary-color">
+					13 Aulas				</span>
+			</span>
+		
+	</div> <!--/.ld-lesson-item-preview-->
+			<div class="ld-lesson-item-expanded ld-expandable ld-expanded" id="ld-nav-content-list-41692">
+			<div class="ld-table-list ld-topic-list">
+				<div class="ld-table-list-items">
+					
+<div class="ld-table-list-item learndash-complete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/o-que-e-git-o-que-e-versionamento-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-complete ld-secondary-background"><span class="ld-icon-checkmark ld-icon"></span></div>
+		<div class="ld-topic-title">
+			O que é Git? O que é versionamento? – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-complete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/o-que-e-github-pra-que-ele-serve-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-complete ld-secondary-background"><span class="ld-icon-checkmark ld-icon"></span></div>
+		<div class="ld-topic-title">
+			O que é GitHub? Pra que ele serve? – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-complete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/a-evolucao-do-git-e-github-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-complete ld-secondary-background"><span class="ld-icon-checkmark ld-icon"></span></div>
+		<div class="ld-topic-title">
+			A Evolução do Git e GitHub – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-complete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/instalacoes-e-configuracoes-importantes-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-complete ld-secondary-background"><span class="ld-icon-checkmark ld-icon"></span></div>
+		<div class="ld-topic-title">
+			Instalações e configurações importantes – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row ld-is-current-item " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Criando o primeiro Repositório – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/instalando-github-desktop-no-linux-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Instalando GitHub Desktop no Linux – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/clonando-um-repositorio-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Clonando um Repositório – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/versionando-seus-projetos-antigos-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Versionando seus projetos antigos – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/voce-sabe-usar-issues-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Você sabe usar Issues? – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/guia-da-linguagem-markdown-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Guia da Linguagem Markdown – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/seu-github-muito-mais-seguro-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Seu GitHub muito mais seguro – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/git-branches-de-forma-facil-e-com-exemplo-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Git Branches de forma fácil e com exemplo – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+
+<div class="ld-table-list-item learndash-incomplete">
+	<a class="ld-table-list-item-preview ld-primary-color-hover ld-topic-row " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/hospedagem-gratis-no-github-pages-curso-de-git-e-github/">
+
+		<div class="ld-status-icon ld-status-incomplete"></div>
+		<div class="ld-topic-title">
+			Hospedagem Grátis no GitHub Pages – Curso de Git e GitHub		</div>
+
+	</a>
+</div>
+
+				</div> <!--/.ld-table-list-items-->
+							</div> <!--/.ld-topic-list-->
+		</div> <!--/.ld-lesson-items-expanded-->
+		</div> <!--/.ld-lesson-item-->
+
+<div class="ld-lesson-item learndash-incomplete">
+	<div class="ld-lesson-item-preview">
+		<a class="ld-lesson-item-preview-heading ld-primary-color-hover" href="https://www.cursoemvideo.com/course/curso-de-git-e-github/testes/teste-de-git-e-github/">
+
+			<div class="ld-status-icon ld-quiz-incomplete"><span class="ld-icon ld-icon-quiz"></span></div>
+			<div class="ld-lesson-title">Teste de Git e Github</div> <!--/.ld-lesson-title-->
+
+		</a> <!--/.ld-lesson-item-preview-heading-->
+	</div> <!--/.ld-lesson-item-preview-->
+</div>
+					</div> <!--/.ld-lesson-items-->
+				</div> <!--/.ld-lesson-navigation-->
+			</div> <!--/.ld-course-navigation-list-->
+		</div> <!--/.ld-course-navigation-->
+			</div> <!--/.ld-focus-sidebar-wrapper-->
+</div> <!--/.ld-focus-sidebar-->
+
+
+	<div class="ld-focus-main">
+
+		<div class="ld-focus-header">
+
+	
+	<div class="ld-mobile-nav expanded">
+		<a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/#" class="ld-trigger-mobile-nav" aria-label="Menu">
+			<span class="bar-1"></span>
+			<span class="bar-2"></span>
+			<span class="bar-3"></span>
+		</a>
+	</div>
+
+	
+	<div class="ld-brand-logo">
+		</div>
+
+		<div class="ld-progress
+	">
+					<div class="ld-progress-wrap">
+					<div class="ld-progress-heading">
+								<div class="ld-progress-stats">
+					<div class="ld-progress-percentage ld-secondary-color">
+					26% Completo					</div>
+					<div class="ld-progress-steps">
+						4/15 Passos					</div>
+				</div> <!--/.ld-progress-stats-->
+			</div>
+
+			<div class="ld-progress-bar">
+				<div class="ld-progress-bar-percentage ld-secondary-background" style="width:26%"></div>
+			</div>
+							</div> <!--/.ld-progress-wrap-->
+				</div> <!--/.ld-progress-->
+	
+<div class="ld-content-actions">
+
+		<div class="ld-content-action
+		">
+			<a class="ld-button ld-button-transparent" href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/instalacoes-e-configuracoes-importantes-curso-de-git-e-github/">
+						<span class="ld-icon ld-icon-arrow-left"></span>
+						<span class="ld-text"> Aula Anterior</span>
+		</a>
+		</div>
+
+		<div class="ld-content-action">
+		<form class="sfwd-mark-complete" method="post" action="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/"><input type="hidden" value="41709" name="post">
+					<input type="hidden" value="41356" name="course_id">
+					<input type="hidden" value="9a01e699ff" name="sfwd_mark_complete">
+					<input type="submit" value="Clique Aqui para concluir a aula" class="learndash_mark_complete_button" disabled="disabled"></form>	</div>
+		
+</div> <!--/.ld-topic-actions-->
+
+
+			<div class="ld-user-menu">
+						<span class="ld-text ld-user-welcome-text">
+			Olá, paulopsantos731gmail-com!				</span>
+
+			<span class="ld-profile-avatar">
+				<img alt="" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/bf0aa9dc084f9765b596864c466c0ae8.png" srcset="https://secure.gravatar.com/avatar/bf0aa9dc084f9765b596864c466c0ae8?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96">			</span> <!--/.ld-profile-avatar-->
+
+			
+			<span class="ld-user-menu-items">
+										<a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/">Curso Home</a>
+												<a href="https://www.cursoemvideo.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fwww.cursoemvideo.com%2Fcourse%2Fcurso-de-git-e-github%2F&amp;_wpnonce=86a8fd4231">Logout</a>
+									</span> <!--/.ld-user-menu-items-->
+
+			
+		</div>
+		</div> <!--/.ld-focus-header-->
+
+		<div class="ld-focus-content">
+
+			
+			<h1>Criando o primeiro Repositório – Curso de Git e GitHub</h1>
+
+			
+			<div class="learndash learndash_post_sfwd-topic user_has_access" id="learndash_post_41709">
+<div class="learndash-wrapper">
+	
+
+		<div class="ld-topic-status">
+
+			<div class="ld-breadcrumbs">
+
+				
+<div class="ld-breadcrumbs-segments">
+				<span><a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/">Git e GitHub [20 Horas]</a> </span>
+						<span><a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/">Aulas de Git e GitHub</a> </span>
+						<span><a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/">Criando o primeiro Repositório – Curso de Git e GitHub</a> </span>
+			</div> <!--/.ld-breadcrumbs-segments-->
+
+<div class="ld-status ld-status-progress ld-primary-background">Em andamento</div>
+			</div> <!--/.ld-breadcrumbs-->
+
+				<div class="ld-progress
+	">
+					<div class="ld-progress-heading">
+									<div class="ld-progress-label">
+					Módulo Progresso					</div>
+								<div class="ld-progress-stats">
+					<div class="ld-progress-percentage ld-secondary-color">
+					30% Completo					</div>
+					<div class="ld-progress-steps">
+											</div>
+				</div> <!--/.ld-progress-stats-->
+			</div>
+
+			<div class="ld-progress-bar">
+				<div class="ld-progress-bar-percentage ld-secondary-background" style="width:30%"></div>
+			</div>
+				</div> <!--/.ld-progress-->
+	
+		</div>
+
+		
+
+<div class="ld-tabs ld-tab-count-1">
+	
+	<div class="ld-tabs-content">
+		
+			<div class="ld-tab-content ld-visible" id="ld-tab-content-41709">
+								<div class="ld-video" data-video-progression="true" data-video-cookie-key="learndash-video-progress-b58fea7fa013a93b6cad934082e72f65" data-video-provider="youtube"><div class="ast-oembed-container"><iframe title="Criando o primeiro Repositório - Curso de Git e GitHub" width="1200" height="675" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/5BYm7UdCrX0.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="ld-video-player-0" data-learndash-video="ld-video-player-0"></iframe></div></div><p>Curso de Git e GitHub desenvolvido por Gustavo Guanabara, com diversas aulas para ajudar você a se especializar, incluindo testes com certificados para agregar em sua carreira. Todas as aulas com vídeos excelentes, super práticos e dinâmicos.</p>
+<span class="cp-load-after-post"></span>			</div>
+
+			
+	</div> <!--/.ld-tabs-content-->
+
+</div> <!--/.ld-tabs-->
+
+<div class="ld-content-actions">
+
+		<div class="ld-content-action
+		">
+			<a class="ld-button " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/instalacoes-e-configuracoes-importantes-curso-de-git-e-github/">
+						<span class="ld-icon ld-icon-arrow-left"></span>
+						<span class="ld-text"> Aula Anterior</span>
+		</a>
+		</div>
+
+				<div class="ld-content-action">
+			<form class="sfwd-mark-complete" method="post" action="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/criando-o-primeiro-repositorio-curso-de-git-e-github/"><input type="hidden" value="41709" name="post">
+					<input type="hidden" value="41356" name="course_id">
+					<input type="hidden" value="9a01e699ff" name="sfwd_mark_complete">
+					<input type="submit" value="Clique Aqui para concluir a aula" class="learndash_mark_complete_button" disabled="disabled"></form>
+						<a href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/" class="ld-primary-color ld-course-step-back">Voltar para Módulo			</a>
+			</div>
+			<div class="ld-content-action">
+							<a class="ld-button " href="https://www.cursoemvideo.com/course/curso-de-git-e-github/aulas/aulas-de-git-e-github/modulos/instalando-github-desktop-no-linux-curso-de-git-e-github/">
+					<span class="ld-text">Próximo Aula</span>
+											<span class="ld-icon ld-icon-arrow-right"></span>
+									</a>
+						</div>
+					
+</div> <!--/.ld-topic-actions-->
+
+<center><p style="color: red"><strong>ATENÇÃO:</strong> O botão de concluir aula só fica clicável depois que toda a aula é assistida</p></center></div> <!--/.learndash-wrapper-->
+</div>
+			
+			
+			
+					</div> <!--/.ld-focus-content-->
+
+	</div> <!--/.ld-focus-main-->
+
+						</div> <!--/.ld-focus-->
+			</div> <!--/.ld-learndash-wrapper-->
+
+						<script>(function(w,d,t,u,n,a,m){w["MauticTrackingObject"]=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)})(window,document,"script","https://info.cursoemvideo.com/mtc.js","mt");mt("send", "pageview", {"email": "paulopsantos731@gmail.com"});</script>			<div class="cpro-onload  cp-popup-global  cp-custom-cls-manual_trigger_44490 " data-class-id="44490" data-inactive-time="60"></div>
+			
+		<div id="cp_popup_id_44490" class="cp-popup-container cp-popup-live-wrap cp_style_44490 cp-module-info_bar   cpro-open" data-style="cp_style_44490" data-module-type="info_bar" data-class-id="44490" data-styleslug="incricoes-uwm">
+
+			
+			<div class="cp-popup-wrapper cp-auto">
+				<div class="cp-popup  cpro-animate-container cp-bottom cp-animated cp-none" style="background-image: url(&quot;//www.cursoemvideo.com/wp-content/uploads/convertpro/design_41406/0.jpg&quot;); top: auto;">
+
+											<div class="cpro-fs-overlay"></div>
+					
+				<input type="hidden" class="panel-settings" data-style_id="44490" data-section="configure" value="{&quot;enable_custom_cookies&quot;:&quot;&quot;,&quot;enable_cookies_class&quot;:&quot;&quot;,&quot;enable_adblock_detection&quot;:&quot;&quot;,&quot;enable_visitors&quot;:&quot;&quot;,&quot;visitor_type&quot;:&quot;first-time&quot;,&quot;referrer_type&quot;:&quot;hide-from&quot;,&quot;hide_custom_cookies&quot;:&quot;&quot;,&quot;hide_cookies_class&quot;:&quot;&quot;,&quot;show_for_logged_in&quot;:&quot;1&quot;,&quot;hide_on_device&quot;:&quot;&quot;,&quot;cookies_enabled&quot;:&quot;1&quot;,&quot;conversion_cookie&quot;:&quot;90&quot;,&quot;closed_cookie&quot;:&quot;30&quot;,&quot;cookies_enabled_submit&quot;:&quot;&quot;,&quot;enable_cookies_class_submit&quot;:&quot;&quot;,&quot;conversion_cookie_submit&quot;:&quot;90&quot;,&quot;cookies_enabled_closed&quot;:&quot;&quot;,&quot;enable_cookies_class_closed&quot;:&quot;&quot;,&quot;closed_cookie_new&quot;:&quot;30&quot;}"><input type="hidden" class="panel-rulesets" data-style_id="44490" data-section="configure" value="[{&quot;name&quot;:&quot;Ruleset 1&quot;,&quot;autoload_on_duration&quot;:true,&quot;load_on_duration&quot;:1,&quot;modal_exit_intent&quot;:false,&quot;autoload_on_scroll&quot;:false,&quot;show_after_within_scroll_info&quot;:&quot;&quot;,&quot;load_after_scroll&quot;:75,&quot;close_after_scroll&quot;:0,&quot;inactivity&quot;:false,&quot;inactivity_link&quot;:&quot;&quot;,&quot;enable_after_post&quot;:false,&quot;enable_custom_scroll&quot;:false,&quot;enable_scroll_class&quot;:&quot;&quot;,&quot;on_scroll_txt&quot;:&quot;&quot;,&quot;show_cta_info&quot;:&quot;&quot;,&quot;enable_custom_cookies&quot;:false,&quot;enable_cookies_class&quot;:&quot;&quot;,&quot;on_cookie_txt&quot;:&quot;&quot;,&quot;hide_cta_link&quot;:&quot;&quot;,&quot;enable_adblock_detection&quot;:false,&quot;all_visitor_info&quot;:&quot;&quot;,&quot;enable_visitors&quot;:&quot;&quot;,&quot;visitor_type&quot;:&quot;first-time&quot;,&quot;enable_referrer&quot;:&quot;&quot;,&quot;referrer_type&quot;:&quot;hide-from&quot;,&quot;display_to&quot;:&quot;&quot;,&quot;hide_from&quot;:&quot;&quot;,&quot;enable_scheduler&quot;:false,&quot;enable_scheduler_txt&quot;:&quot;&quot;,&quot;start_date&quot;:&quot;&quot;,&quot;end_date&quot;:&quot;&quot;,&quot;custom_cls_text_head&quot;:&quot;&quot;,&quot;enable_custom_class&quot;:false,&quot;copy_link_code_button&quot;:&quot;Copy Link Code&quot;,&quot;copy_link_cls_code_button&quot;:&quot;&quot;,&quot;custom_class&quot;:&quot;&quot;,&quot;custom_cls_text&quot;:&quot;&quot;}]"><input type="hidden" id="cp_after_content_scroll" value="50"><style id="cp_popup_style_44490" type="text/css">.cp_style_44490 .cp-popup-content {font-family:Verdana;font-style:Normal;font-weight:Normal;}.cp_style_44490 .cp-popup{ background-blend-mode:overlay;background-color:rgba(21,0,255,0.28);background-repeat :repeat;background-position :left;background-size :cover;border-style:none;border-color:#e1e1e1;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px;-webkit-box-shadow:0px 0px 12px 0px rgba(86,86,131,0.6);-moz-box-shadow:0px 0px 12px 0px rgba(86,86,131,0.6);box-shadow:0px 0px 12px 0px rgba(86,86,131,0.6);toggle:1;}.cp_style_44490 #panel-1-44490 .cp-target:hover { }.cp_style_44490 #panel-1-44490 { }.cp_style_44490 .cp-popup-wrapper .cp-panel-content {max-width:950px;}.cp_style_44490 .cpro-fs-overlay{ }.cp_style_44490 .cp-popup-content { width:950px;height:60px;}@media ( max-width: 767px ) {.cp_style_44490 .cp-popup{ background-blend-mode:overlay;background-color:rgba(219,10,91,0.29);background-repeat :no-repeat;background-position :left;background-size :cover;border-style:none;border-color:#e1e1e1;border-width:1px 1px 1px 1px;border-radius:0px 0px 0px 0px;-webkit-box-shadow:0px 0px 12px 0px rgba(86,86,131,0.6);-moz-box-shadow:0px 0px 12px 0px rgba(86,86,131,0.6);box-shadow:0px 0px 12px 0px rgba(86,86,131,0.6);toggle:1;}.cp_style_44490 #panel-1-44490 .cp-target:hover { }.cp_style_44490 #panel-1-44490 { }.cp_style_44490 .cp-popup-wrapper .cp-panel-content {max-width:320px;}.cp_style_44490 .cpro-fs-overlay{ }.cp_style_44490 .cp-popup-content { width:320px;height:80px;}}.cp_style_44490 #toggle-44490 .cp-target { }.cp_style_44490 #toggle-44490 .cp-target:hover { }.cp_style_44490 .cp-open-infobar-toggle{ font-size:16px;}.cp_style_44490 .cp-open-infobar-toggle{ color:#fff;}.cp_style_44490 .cp-open-infobar-toggle{ background-color:#000;}.cp_style_44490 .cp-open-infobar-toggle{ }.cp_style_44490 .cp-open-infobar-toggle{ width:350px;}.cp_style_44490 .cp-open-infobar-toggle{ line-height:50px;height:50px;}.cp_style_44490 #toggle-44490 { }@media ( max-width: 767px ) {.cp_style_44490 #toggle-44490 .cp-target { }.cp_style_44490 #toggle-44490 .cp-target:hover { }.cp_style_44490 .cp-open-infobar-toggle{ font-size:5px;}.cp_style_44490 .cp-open-infobar-toggle{ color:#fff;}.cp_style_44490 .cp-open-infobar-toggle{ background-color:#000;}.cp_style_44490 .cp-open-infobar-toggle{ }.cp_style_44490 .cp-open-infobar-toggle{ width:118px;}.cp_style_44490 .cp-open-infobar-toggle{ line-height:17px;height:17px;}.cp_style_44490 #toggle-44490 { }}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field{ font-family:inherit;font-style:inherit;font-weight:inherit;font-size:13px;letter-spacing:0px;text-align:left;color:#666;background-color:#fff;border-style:solid;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px;border-color:#bbb;active-border-color:#666;padding:0px 10px 0px 10px;}.cp_style_44490 #form_field-44490 .cp-target:hover { }.cp_style_44490 #form_field-44490 placeholder { color:#666;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field input[type='radio'], .cp_style_44490 .cp-popup .cpro-form .cp-form-input-field input[type='checkbox'] {color:#666;background-color:#fff;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field:focus {border-color: #666;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field::-webkit-input-placeholder {color:#666;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field::-moz-placeholder  {color:#666;}.cp_style_44490 .cp-popup .cpro-form .pika-lendar table tbody button:hover { background :#666;}.cp_style_44490 .cp-popup .cpro-form .pika-lendar table tbody .is-selected .pika-button { background :#666;box-shadow : inset 0 1px 3px #666;}.cp_style_44490 #form_field-44490 { }@media ( max-width: 767px ) {.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field{ font-family:inherit;font-style:inherit;font-weight:inherit;font-size:4px;letter-spacing:0px;text-align:left;color:#666;background-color:#fff;border-style:solid;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px;border-color:#bbb;active-border-color:#666;padding:0px 10px 0px 10px;}.cp_style_44490 #form_field-44490 .cp-target:hover { }.cp_style_44490 #form_field-44490 placeholder { color:#666;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field input[type='radio'], .cp_style_44490 .cp-popup .cpro-form .cp-form-input-field input[type='checkbox'] {color:#666;background-color:#fff;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field:focus {border-color: #666;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field::-webkit-input-placeholder {color:#666;}.cp_style_44490 .cp-popup .cpro-form .cp-form-input-field::-moz-placeholder  {color:#666;}.cp_style_44490 .cp-popup .cpro-form .pika-lendar table tbody button:hover { background :#666;}.cp_style_44490 .cp-popup .cpro-form .pika-lendar table tbody .is-selected .pika-button { background :#666;box-shadow : inset 0 1px 3px #666;}.cp_style_44490 #form_field-44490 { }}.cp_style_44490 #cp_heading-1-44490 .cp-target { font-family:Open Sans;font-style:700;font-weight:700;font-size:16px;line-height:1.39;letter-spacing:0;text-align:center;color:#ffffff;width:495px;height:49px;}.cp_style_44490 #cp_heading-1-44490 .cp-target:hover { }.cp_style_44490 #cp_heading-1-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_heading-1-44490 { left: 212px;top: 6px;z-index:5;}@media ( max-width: 767px ) {.cp_style_44490 #cp_heading-1-44490 .cp-target { font-family:Open Sans;font-style:700;font-weight:700;font-size:12px;line-height:1.23;letter-spacing:0;text-align:center;color:#ffffff;width:224px;height:28px;}.cp_style_44490 #cp_heading-1-44490 .cp-target:hover { }.cp_style_44490 #cp_heading-1-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_heading-1-44490 { left: 83px;top: 7px;z-index:5;}}.cp_style_44490 #cp_countdown-0-44490 .cp-target { font-family:Open Sans;font-style:600;font-weight:600;letter-spacing:0px;width:283px;height:62px;}.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-digit, #cp_countdown-0-44490 .cp-target { font-size: 20px }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-unit { font-size: 10px }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-digit-wrap .cp-countdown-digit { color: #555 }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-unit-wrap .cp-countdown-unit { color: #555 }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding { text-align: -webkit-center }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { background-color:#f4f4f4 }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { border-style:none }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { border-width:1px 1px 1px 1px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { border-radius:0px 0px 0px 0px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { padding:15px 15px 15px 15px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-unit-wrap { margin-top: 1px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target:hover { }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding { countdown-text-align:center;}.cp_style_44490 #cp_countdown-0-44490 .cp-target { }.cp_style_44490 #cp_countdown-0-44490 .cp-target ~ .cp-field-shadow { }.cp_style_44490 #cp_countdown-0-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_countdown-0-44490 { left: -76.5px;top: -2px;z-index:6;}@media ( max-width: 767px ) {.cp_style_44490 #cp_countdown-0-44490 .cp-target { font-family:Open Sans;font-style:600;font-weight:600;letter-spacing:0px;width:134px;height:40px;}.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-digit, #cp_countdown-0-44490 .cp-target { font-size: 10px }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-unit { font-size: 6px }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-digit-wrap .cp-countdown-digit { color: #555 }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-unit-wrap .cp-countdown-unit { color: #555 }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding { text-align: -webkit-center }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { background-color:#f4f4f4 }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { border-style:none }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { border-width:1px 1px 1px 1px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { border-radius:0px 0px 0px 0px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding  { padding:5px 5px 5px 5px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-unit-wrap { margin-top: 1px; }.cp_style_44490 #cp_countdown-0-44490 .cp-target:hover { }.cp_style_44490 #cp_countdown-0-44490 .cp-target .cp-countdown-holding { countdown-text-align:center;}.cp_style_44490 #cp_countdown-0-44490 .cp-target { }.cp_style_44490 #cp_countdown-0-44490 .cp-target ~ .cp-field-shadow { }.cp_style_44490 #cp_countdown-0-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_countdown-0-44490 { left: -50px;top: 0px;z-index:6;}}.cp_style_44490 #cp_close_image-0-44490 .cp-target { width:32px;height:32px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target:hover { }.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-style:none;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-style:none;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-color:#757575;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-color:#757575;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-width:1px 1px 1px 1px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-width:1px 1px 1px 1px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target > .cp-close-link { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target > .cp-close-image { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { }.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { }.cp_style_44490 #cp_close_image-0-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_close_image-0-44490 .cp-target:hover { }.cp_style_44490 #cp_close_image-0-44490 .cp-target:hover ~ .cp-field-shadow { }.cp_style_44490 #cp_close_image-0-44490 { left: 958px;top: 14px;z-index:7;}@media ( max-width: 767px ) {.cp_style_44490 #cp_close_image-0-44490 .cp-target { width:28px;height:28px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target:hover { }.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-style:none;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-style:none;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-color:#757575;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-color:#757575;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-width:1px 1px 1px 1px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-width:1px 1px 1px 1px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target > .cp-close-link { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target > .cp-close-image { border-radius:0px 0px 0px 0px;}.cp_style_44490 #cp_close_image-0-44490 .cp-target { }.cp_style_44490 #cp_close_image-0-44490 .cp-target ~ .cp-field-shadow { }.cp_style_44490 #cp_close_image-0-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_close_image-0-44490 .cp-target:hover { }.cp_style_44490 #cp_close_image-0-44490 .cp-target:hover ~ .cp-field-shadow { }.cp_style_44490 #cp_close_image-0-44490 { left: 323px;top: 7px;z-index:7;}}.cp_style_44490 #cp_button-1-44490 .cp-target { font-family:Open Sans;font-style:700;font-weight:700;font-size:16px;letter-spacing:0px;text-align:center;color:#ffffff;background:#358400;width:248px;height:50px;padding:0px 15px 0px 15px;}.cp_style_44490 #cp_button-1-44490 .cp-target:hover { color:#fff;background:#c9c9c9;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-style:solid;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-style:solid;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-color:#9B59B6;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-color:#9B59B6;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-width:2px 2px 2px 2px;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-width:2px 2px 2px 2px;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target > .cp-close-link { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target > .cp-close-image { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target { }.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { }.cp_style_44490 #cp_button-1-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_button-1-44490 .cp-target:hover { border-color:#8E44AD;}.cp_style_44490 #cp_button-1-44490 .cp-target:hover ~ .cp-field-shadow { border-color:#8E44AD;}.cp_style_44490 #cp_button-1-44490 { left: 699px;top: 5px;z-index:9;}@media ( max-width: 767px ) {.cp_style_44490 #cp_button-1-44490 .cp-target { font-family:Open Sans;font-style:700;font-weight:700;font-size:16px;letter-spacing:0px;text-align:center;color:#ffffff;background:#358400;width:248px;height:50px;padding:0px 15px 0px 15px;}.cp_style_44490 #cp_button-1-44490 .cp-target:hover { color:#fff;background:#c9c9c9;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-style:solid;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-style:solid;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-color:#9B59B6;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-color:#9B59B6;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-width:2px 2px 2px 2px;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-width:2px 2px 2px 2px;}.cp_style_44490 #cp_button-1-44490 .cp-target { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target > .cp-close-link { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target > .cp-close-image { border-radius:20px 20px 20px 20px;}.cp_style_44490 #cp_button-1-44490 .cp-target { }.cp_style_44490 #cp_button-1-44490 .cp-target ~ .cp-field-shadow { }.cp_style_44490 #cp_button-1-44490 .cp-rotate-wrap{ transform:rotate( 0deg);}.cp_style_44490 #cp_button-1-44490 .cp-target:hover { border-color:#8E44AD;}.cp_style_44490 #cp_button-1-44490 .cp-target:hover ~ .cp-field-shadow { border-color:#8E44AD;}.cp_style_44490 #cp_button-1-44490 { left: 699px;top: 5px;z-index:9;}}@media ( max-width: 767px ) {.cp_style_44490 .cp-invisible-on-mobile {display: none !important;}}</style>
+					<div class="cp-popup-content cpro-active-step cp-img-lazy cp-bg-lazy cp-info_bar cp-bottom     cp-panel-1" data-entry-animation="cp-none" data-cp-src="[&quot;44491|//www.cursoemvideo.com/wp-content/uploads/convertpro/design_41406/0.jpg|full&quot;,&quot;44492|//www.cursoemvideo.com/wp-content/uploads/convertpro/design_41406/1.jpg|full&quot;]" data-overlay-click="1" data-title="incrições uwm" data-module-type="info_bar" data-step="1" data-width="950" data-mobile-width="320" data-height="60" data-mobile-height="80" data-mobile-break-pt="767" data-popup-position="bottom" data-mobile-responsive="yes">
+												
+					<div class="cpro-form-container">                             
+						<div id="cp_heading-1-44490" class="cp-field-html-data    cp-none cp_has_editor cp-animated" data-type="cp_heading"><div class="cp-rotate-wrap"><div class="cp-target cp-field-element cp-heading tinymce" name="cp_heading-1"><p>PROGRAMA UNIVERSIDADE WEB MARKETING HOSTNET<br>INCRIÇÕES ABERTAS - APENAS 50 VAGAS</p></div></div>
+</div><div id="cp_countdown-0-44490" class="cp-field-html-data   cp-countdown-block   cp-none cp-countdown-field  cpro-show_months cp-animated" data-type="cp_countdown" data-field-title="Countdown" data-action="{{field_action}}" data-step="" data-redirect="{{data-redirect}}" data-timer-type="fixed" data-fixed="2020|08|4|0|55" data-evergreen="0|2|55|55" data-fixed-action="none" data-evergreen-action="none" data-timezone="-3">	
+	<div class="cp-rotate-wrap">
+		<div class="cp-target cp-field-element cp-countdown is-countdown"><div class="cp-countdown-holding"><div class="cp-countdown-digit-wrap"><span class="cp-countdown-digit">00</span></div><div class="cp-countdown-unit-wrap"><span class="cp-countdown-unit">Months</span></div></div><div class="cp-countdown-holding"><div class="cp-countdown-digit-wrap"><span class="cp-countdown-digit">02</span></div><div class="cp-countdown-unit-wrap"><span class="cp-countdown-unit">Days</span></div></div><div class="cp-countdown-holding"><div class="cp-countdown-digit-wrap"><span class="cp-countdown-digit">15</span></div><div class="cp-countdown-unit-wrap"><span class="cp-countdown-unit">Hours</span></div></div><div class="cp-countdown-holding"><div class="cp-countdown-digit-wrap"><span class="cp-countdown-digit">54</span></div><div class="cp-countdown-unit-wrap"><span class="cp-countdown-unit">Minutes</span></div></div><div class="cp-countdown-holding"><div class="cp-countdown-digit-wrap"><span class="cp-countdown-digit">53</span></div><div class="cp-countdown-unit-wrap"><span class="cp-countdown-unit">Seconds</span></div></div></div>
+		<div class="cp-field-shadow"></div>
+		
+	</div>
+</div><div id="cp_close_image-0-44490" class="cp-field-html-data    cp-none cp-image-ratio cp-close-field cp-close-image-wrap cp-animated" data-type="cp_close_image" data-field-title="Close Image" data-action="close">	
+	<div class="cp-rotate-wrap">
+		<div class="cp-image-main"><img data-cp-src="https://www.cursoemvideo.com/wp-content/plugins/convertpro/assets/admin/img/close1.png" class="cp-target cp-field-element cp-close-image cp-img-lazy" alt="" name="cp_close_image-0" value="" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/close1.png">
+			<div class="cp-field-shadow"></div>
+		</div>
+		
+	</div>
+</div>							<div id="cp_button-1-44490" class="cp-field-html-data   cp-none cp-animated" data-type="cp_button" data-action="goto_url" data-step="1" data-redirect="https://www.hostnet.com.br/universidade-web-marketing/" data-redirect-target="_blank">
+	<div class="cp-rotate-wrap"><button type="button" class=" cp-target cp-field-element cp-button cp-button-field" data-success-message="Thank You for Subscribing!" data-get-param="false">FAÇA PARTE DA HOSTNET</button>
+	<div class="cp-btn-tooltip"></div>
+</div></div></div>              
+														
+						</div><!-- .cp-popup-content -->
+						      
+		<input type="hidden" name="param[date]" value="1 de August de 2020">
+		<input type="text" class="cpro-hp-field" name="cpro_hp_field_44490" value="">
+		<input type="hidden" name="action" value="cp_v2_notify_admin">
+		<input type="hidden" name="style_id" value="44490">
+						</div>
+							</div><!-- .cp-popup-wrapper -->
+			
+					</div><!-- Modal popup container -->
+			<a id="ast-scroll-top" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both" style="display: none;">
+	<span class="screen-reader-text">Rolar para cima</span>
+</a>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<link rel="stylesheet" id="cpro-countdown-style-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cp-countdown-style.css" media="all">
+<link rel="stylesheet" id="cp-google-fonts-44490-css" href="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/css(2)" media="all">
+<script>
+var astra = {"break_point":"768","isRtl":"","query_vars":"{\"page\":0,\"sfwd-courses\":\"curso-de-git-e-github\",\"post_type\":\"sfwd-topic\",\"name\":\"criando-o-primeiro-repositorio-curso-de-git-e-github\",\"sfwd-lessons\":\"aulas-de-git-e-github\",\"sfwd-topic\":\"criando-o-primeiro-repositorio-curso-de-git-e-github\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"pagename\":\"\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}","edit_post_url":"https:\/\/www.cursoemvideo.com\/wp-admin\/post.php?post={{id}}&action=edit","ajax_url":"https:\/\/www.cursoemvideo.com\/wp-admin\/admin-ajax.php","shop_infinite_count":"2","shop_infinite_total":"0","shop_pagination":"number","shop_infinite_scroll_event":"scroll","shop_infinite_nonce":"b3a885fe68","shop_no_more_post_message":"N\u00e3o h\u00e1 mais produtos para mostrar.","checkout_prev_text":"Retornar aos meus detalhes","checkout_next_text":"Realizar pagamento","show_comments":"Mostrar coment\u00e1rios","shop_quick_view_enable":"disabled","shop_quick_view_stick_cart":"1","shop_quick_view_auto_height":"1","single_product_ajax_add_to_cart":"","is_cart":"","is_single_product":"","view_cart":"Visualizar carrinho","cart_url":"https:\/\/www.cursoemvideo.com\/carrinho\/"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/style.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash_pager.min.js.transferir"></script>
+<script>
+var sfwd_data = {"json":"{\"ajaxurl\":\"https:\\\/\\\/www.cursoemvideo.com\\\/wp-admin\\\/admin-ajax.php\"}"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash_template_script.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.dropdown.min.js.transferir"></script>
+<script>
+var ajaxurl = "https:\/\/www.cursoemvideo.com\/wp-admin\/admin-ajax.php";
+var ldVars = {"postID":"41709","videoReqMsg":"You must watch the video before accessing this content"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.blockUI.min.js.transferir"></script>
+<script>
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrinho","cart_url":"https:\/\/www.cursoemvideo.com\/carrinho\/","is_cart":"","cart_redirect_after_add":"yes"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/add-to-cart.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/js.cookie.min.js.transferir"></script>
+<script>
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/woocommerce.min.js.transferir"></script>
+<script>
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_f375d4dd3463f941e1f1f8e90a56cf7f","fragment_name":"wc_fragments_f375d4dd3463f941e1f1f8e90a56cf7f","request_timeout":"5000"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cart-fragments.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.ba-throttle-debounce.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.easing.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.fitvids.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/jquery.bxslider.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/21fc6016fef8bfea3081cb75c866242b-layout-bundle.js.transferir"></script>
+<script>
+var astraAddon = {"sticky_active":""};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/astra-addon-5f1ffbe78687d5-79948567.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/single-product-ajax-cart.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/wp-embed.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/js.cookie.min.js(1).transferir"></script>
+<script>
+var learndash_video_data = {"videos_found_provider":"youtube","videos_found_type":"embed_shortcode","videos_auto_start":"1","videos_show_controls":"1","videos_auto_complete":"","videos_auto_complete_delay":"0","videos_auto_complete_delay_message":"","videos_hide_complete_button":"","videos_shown":"AFTER","video_debug":"","video_admin_bypass":"","video_cookie_key":"learndash-video-progress-b58fea7fa013a93b6cad934082e72f65","video_focus_pause":"","video_track_time":"","video_track_expires":"30","video_track_domain":"","video_track_path":"\/"};
+</script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/learndash_video_script.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/iframe_api"></script>
+<script>
+var cp_ajax = {"url":"https:\/\/www.cursoemvideo.com\/wp-admin\/admin-ajax.php","ajax_nonce":"f12460eb3a","assets_url":"https:\/\/www.cursoemvideo.com\/wp-content\/plugins\/convertpro\/assets\/","not_connected_to_mailer":"This form is not connected with any mailer service! Please contact web administrator.","timer_labels":"Years,Months,Weeks,Days,Hours,Minutes,Seconds","timer_labels_singular":"Year,Month,Week,Day,Hour,Minute,Second","image_on_ready":""};
+var cp_pro = {"inactive_time":"60"};
+var cp_pro_url_cookie = {"days":"30"};
+var cp_v2_ab_tests = {"cp_v2_ab_tests_object":[]};
+</script>
+<script defer="defer" src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cp-popup.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cp_countdown_plugin.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cp_countdown.min.js.transferir"></script>
+<script src="./Criando o primeiro Repositório – Curso de Git e GitHub – Curso em Vídeo_files/cp-countdown-script.js.transferir"></script>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+			
+	
+
+</body></html>
